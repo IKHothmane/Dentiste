@@ -1,0 +1,254 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Header from "../../../components/Header.astro";
+import Footer from "../../../components/Footer.astro";
+import { AppointmentButton } from "../../../components/AppointmentButton";
+---
+
+<BaseLayout title="Pédiatrie | Dr PINTO KAREN - Chirurgien Dentiste">
+  <Header />
+
+  <main class="w-full">
+    <section class="relative overflow-hidden hero-gradient">
+      <div class="absolute inset-0 bg-pattern"></div>
+      <div class="w-full px-6 lg:px-12 py-section-padding flex flex-col lg:flex-row items-center gap-8 relative z-10">
+        <div class="flex-1 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold">
+            <span class="material-symbols-outlined text-[18px]">child_care</span>
+            Dentisterie Pédiatrique
+          </div>
+          <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface max-w-xl">
+            Des sourires radieux dès le plus <span class="text-primary italic">jeune âge</span>.
+          </h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">
+            Nous offrons des soins doux et personnalisés pour vos enfants dans un environnement ludique et rassurant pour instaurer de bonnes habitudes durablement.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-4">
+            <AppointmentButton client:load label="Prendre Rendez-vous" phone="01 23 45 67 89" />
+            <a
+              class="flex items-center gap-2 px-8 py-4 rounded-xl border border-outline text-primary font-headline-md text-headline-md hover:bg-surface-container-low transition-all"
+              href="/a-propos"
+            >
+              <span class="material-symbols-outlined">play_circle</span>
+              Découvrir le Cabinet
+            </a>
+          </div>
+          <div class="pt-8 flex items-center gap-4">
+            <div class="flex -space-x-2">
+              <img
+                alt="Patient"
+                class="w-10 h-10 rounded-full border-2 border-white object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQbJTXB9K779sUeLR1uD4K5OZItUSNlmj3z-IerqkDepW4L0Da6w8xUloOasxUEeJMJ8oGbm1jVMjf-S4FQR7jaQHwtu2CqOWxN3WNf51qK0DK6_kQABEBqtO_B2rkrwnfnHEmnpZWnwZGmSpHULJZtn9EM2srC8-1NDEFA79shqWfvDtu9QEhOATldYtk9-hSpVDslGDPDndJJBmzUVmh2Gh4zpcDIWvtQZzKwnjbtL1w1nqqwkoUSCGiPCvo7bdhPUzX5re4FGM"
+              />
+              <img
+                alt="Patient"
+                class="w-10 h-10 rounded-full border-2 border-white object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9XOFyAAhk6h-vOL8CiNFJJlQs_x8ES2jLyUxjQtP-4OODh0XcRdx9CWUsOhnr9TPK0xmwrThnCzP0NqN0O0MvHE4HUQfQzPQEwsTotMRtgSjcI1hgsiuB84mMP6W9Vdn4UF6N3U5isxIbLtO7MSX3nRgwHUEclOqtKaBgCCH_c9ZoVpFGDxtRIqHKapvUHIq_nSuPrQPGbnIhJ9aUKKImyV-o-cQd2pLikGSzTsZ0_AWLEi4T-LeW8ZvGC_xPSwhWowRnJJ6kJ1E"
+              />
+              <img
+                alt="Patient"
+                class="w-10 h-10 rounded-full border-2 border-white object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX69u9nEvxpF5ggOeAxnDSPC2Kl3mdFd0fV227IOM8gZUQO1oJWQWGrIQlFFT0hs8jQBiC0HWPirKGrcYJdqVCWmgKFg6-BLbrdetHPfaCLXo1hNHALBYjtkiwzZCq2mqOgh8BVPHuWrJ5lr5bWe342F94xLcAtcmb80OAF2o5QcCItEAP42YldCzP6ij-_YABYQwgfzJ7nCrs8txFubRI84iRO9wzOSN7NwIb_r65dqNW7SvlS1Ho6jeYO_JNsN62frZSiWqhe-s"
+              />
+            </div>
+            <div class="text-on-surface-variant font-body-md text-body-md">
+              <span class="font-bold text-on-surface">1,000+</span> parents nous font confiance
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-1 relative w-full">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+            <img
+              class="w-full h-auto object-cover"
+              alt="Cabinet dentaire pédiatrique"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc0RoSrFwjC9nhbg02lZinZnLA7nJP_JXg7M7hPlqqACzoQHQ_akiyY2rRmxo1QIVn5FYDJipOFSczZdKU-bGkNEaGz7woXzTbOBnlyI9jxPpbzhTWtL1PF1Rgzm5OU5xGbiw5ByRqyZPTurB9ebVExMyCmih3VI6-3EaCcxhpJ-ycNJIyul_GVM5LbzyioHPPCVYOjSeQxq6CKCTpw_DMlhZxTfEGjejtRyRR3VYIilEsMvqSV9bE_2JpMq_DodHDDb7T1_Aw8lU"
+            />
+            <div class="absolute bottom-6 right-6 glass-card p-4 rounded-2xl shadow-lg">
+              <div class="flex items-center gap-3">
+                <div class="bg-primary-container p-2 rounded-lg text-on-primary-container">
+                  <span class="material-symbols-outlined">verified</span>
+                </div>
+                <div>
+                  <div class="font-label-md text-label-md font-bold">Soin Certifié</div>
+                  <div class="text-[12px] opacity-70 italic">Ambiance Zéro Stress</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-section-padding bg-surface-container-lowest">
+      <div class="w-full px-6 lg:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+          <h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface">
+            Une approche <span class="text-primary">éducative</span> et douce
+          </h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant">
+            Parce que chaque visite doit être une aventure positive pour votre enfant.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <div class="md:col-span-8 group relative rounded-3xl overflow-hidden border border-outline-variant hover:border-primary transition-all duration-500 bg-surface-container-lowest p-8 h-[420px] flex flex-col justify-end">
+            <img
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-20"
+              alt="Clinique dentaire"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXd75c4OFeM8OWSchzkgaT-cjxL9LYclu-yMq_0EN0z7973Sgyh1djMs4d_f4gyaPC4MykcwsThoxExWJMkBDKDHxw7TVY_9hm4OLbRNwIyIU6BRsOzXpmRXV3oMRPX39wmPx23Y3sjK4itjd_HFUfUdFnmYrsTmJMUo3PTHeQY5Ds1d5cbbn-MuszBgTrQ-mwrhwrfVBNKxNAyzzJnbWrMv5-_eF50JT7CWvTg8rb9SZffWzeviL6j1ewsPBCyJT6ctbzKNDm1Fk"
+            />
+            <div class="relative z-10 space-y-4">
+              <div class="bg-primary-container/10 text-primary w-12 h-12 rounded-2xl flex items-center justify-center">
+                <span class="material-symbols-outlined text-[32px]">school</span>
+              </div>
+              <h3 class="font-headline-lg text-headline-lg text-on-surface">Éducation &amp; Prévention</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+                Nous apprenons aux enfants l'importance du brossage à travers des jeux et des explications simples pour prévenir les caries dès le début.
+              </p>
+            </div>
+          </div>
+
+          <div class="md:col-span-4 bg-primary p-8 rounded-3xl flex flex-col justify-between text-on-primary">
+            <div class="space-y-4">
+              <span class="material-symbols-outlined text-[48px]">mood</span>
+              <h3 class="font-headline-md text-headline-md">Environnement Ludique</h3>
+              <p class="text-sm opacity-90 leading-relaxed">
+                Notre cabinet est conçu pour que les enfants se sentent chez eux. Des écrans au plafond aux jouets en salle d'attente.
+              </p>
+            </div>
+            <div class="mt-8 border-t border-on-primary/20 pt-6">
+              <div class="flex items-center justify-between">
+                <span class="text-sm">98% de satisfaction parents</span>
+                <span class="material-symbols-outlined">star_rate</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:col-span-4 bg-surface-container-low p-8 rounded-3xl space-y-4 border border-outline-variant">
+            <div class="bg-surface w-12 h-12 rounded-2xl flex items-center justify-center text-secondary shadow-sm">
+              <span class="material-symbols-outlined">medical_services</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md">Première Visite</h3>
+            <p class="text-on-surface-variant">
+              Une rencontre en douceur pour faire connaissance avec l'équipement et le Dr Pinto Karen sans aucune pression.
+            </p>
+          </div>
+
+          <div class="md:col-span-4 bg-surface-container-low p-8 rounded-3xl space-y-4 border border-outline-variant">
+            <div class="bg-surface w-12 h-12 rounded-2xl flex items-center justify-center text-secondary shadow-sm">
+              <span class="material-symbols-outlined">shield</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md">Soins Protecteurs</h3>
+            <p class="text-on-surface-variant">
+              Application de vernis fluorés et scellement de sillons pour protéger les dents définitives de votre enfant.
+            </p>
+          </div>
+
+          <div class="md:col-span-4 bg-surface-container-low p-8 rounded-3xl space-y-4 border border-outline-variant">
+            <div class="bg-surface w-12 h-12 rounded-2xl flex items-center justify-center text-secondary shadow-sm">
+              <span class="material-symbols-outlined">emergency</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md">Urgences Pédiatriques</h3>
+            <p class="text-on-surface-variant">
+              Un service dédié pour les dents cassées ou les douleurs aiguës, avec une prise en charge prioritaire le jour même.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-section-padding bg-surface">
+      <div class="w-full px-6 lg:px-12">
+        <div class="bg-primary-container rounded-[40px] overflow-hidden flex flex-col lg:flex-row">
+          <div class="p-12 lg:p-20 flex-1 text-on-primary-container flex flex-col justify-center space-y-8">
+            <h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg">
+              Construisons ensemble de <span class="underline decoration-primary-fixed decoration-4 underline-offset-8">saines habitudes</span>.
+            </h2>
+            <ul class="space-y-6">
+              <li class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center flex-shrink-0 font-bold">
+                  1
+                </div>
+                <div>
+                  <p class="font-bold text-lg">Confiance Mutuelle</p>
+                  <p class="opacity-80">Nous prenons le temps d'expliquer chaque geste à votre enfant avec des mots simples.</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center flex-shrink-0 font-bold">
+                  2
+                </div>
+                <div>
+                  <p class="font-bold text-lg">Suivi Personnalisé</p>
+                  <p class="opacity-80">Un carnet de santé dentaire pour suivre l'évolution de la croissance des mâchoires.</p>
+                </div>
+              </li>
+              <li class="flex items-start gap-4">
+                <div class="w-8 h-8 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center flex-shrink-0 font-bold">
+                  3
+                </div>
+                <div>
+                  <p class="font-bold text-lg">Soutien aux Parents</p>
+                  <p class="opacity-80">Des conseils pratiques pour gérer le brossage quotidien et l'alimentation à la maison.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1 min-h-[400px] relative">
+            <img
+              class="absolute inset-0 w-full h-full object-cover"
+              alt="Dentiste et enfant"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM3GkYFpkLN-Z7V3zi3nvLEU93biOO6o6iWTpl3eP2GttVyv_m5cp22Kw6QTgFCRHUdug7xrjyBpgCQEmkGIuTEWWurPav-uWVBlnGvuzFEPoHoHyTq8rJTwibMudKB9aIMTTzsAI6WEgztFj-BjYQRH6FWqXRN3ZthINyHSTrv6_8c5Z3Ul770FcYYaGDmiO3HScKDKGrXKxq5H684_Ltg-X5nRoymu3gnVQQBByZ-6qtlr6CXs7-ab46KDag3QIxtvTJkRXYpoc"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-section-padding">
+      <div class="w-full px-6 lg:px-12">
+        <div class="bg-surface-container text-center p-12 lg:p-20 rounded-[32px] border border-outline-variant space-y-8">
+          <h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface">
+            Prêt pour le premier rendez-vous ?
+          </h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+            Offrez à votre enfant les meilleurs soins dentaires dès aujourd'hui. Notre équipe est impatiente de vous accueillir.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <AppointmentButton client:load label="Prendre RDV en ligne" phone="01 23 45 67 89" />
+            <a
+              class="bg-surface text-on-surface px-12 py-5 rounded-2xl font-headline-md text-headline-md border border-outline-variant hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2"
+              href="tel:0123456789"
+            >
+              <span class="material-symbols-outlined">call</span>
+              Nous appeler
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .bg-pattern {
+    background-color: #f8fafb;
+    background-image: radial-gradient(#006a61 0.5px, transparent 0.5px), radial-gradient(#006a61 0.5px, #f8fafb 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    opacity: 0.05;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(135deg, #f8fafb 0%, #e6f7f5 100%);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+</style>

@@ -1,0 +1,102 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { AppointmentButton } from "../../components/AppointmentButton";
+---
+
+<BaseLayout title="À Propos - Dr PINTO KAREN">
+  <Header />
+
+  <main class="py-section-padding px-margin-x">
+    <section class="max-w-container-max mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="relative rounded-3xl overflow-hidden aspect-[4/3] bg-surface-container-high shadow-lg">
+          <img
+            alt="Salle d'attente du cabinet"
+            class="object-cover w-full h-full"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAolcWeaC8IUJ_Ps4dbqkioj-QUUmgB7s7W4zU1C6QqwxAphfEGCSeedbwvu38Cze51VpbLHysgachaFJjZ98sSuJKx0byLEb0qgaVk6fqyRQopXEMBS7Y3THGp6HCQT78LmWZTajD2kCOBdGIzEROEJL7-5hAUwbL2anuUC0klCt2UuMqZHU8Yfc4d6_Nq93qAREzvehOo9we7E7ZkTWYMGBJgzBSEmIjmBHsTrNwDLa1TSDNDn9a2AlmbTGpii450BqoZcbxfAY4"
+          />
+        </div>
+
+        <div>
+          <span class="text-primary font-extrabold uppercase tracking-[0.2em] text-xs mb-4 block">Bienvenue au Cabinet</span>
+          <h1 class="font-headline-lg text-headline-lg text-on-surface mb-8 leading-[1.1]">
+            Des soins confortables.<br />Pour un vous confiant.
+          </h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+            Notre mission est de fournir des soins dentaires exceptionnels dans un environnement chaleureux et rassurant. Nous traitons chaque patient comme un membre de notre famille, en prenant le temps d'écouter et de personnaliser chaque traitement.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4">
+            <AppointmentButton client:load label="Prendre RDV" phone="01 23 45 67 89" />
+            <a
+              class="border-2 border-outline-variant text-on-surface font-bold text-label-md px-8 py-4 rounded-lg hover:border-primary hover:text-primary transition-all flex items-center gap-2 bg-surface"
+              href="/services"
+            >
+              <span class="material-symbols-outlined text-sm">medical_services</span>
+              Voir les services
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-container-max mx-auto mt-16">
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 bg-surface border border-outline-variant/50 rounded-3xl p-8">
+        <div>
+          <p class="font-extrabold text-3xl text-primary mb-1">15+</p>
+          <p class="font-bold text-[clamp(10px,0.9vw,11px)] text-on-surface-variant uppercase tracking-widest leading-tight">Années d'Expérience</p>
+        </div>
+        <div>
+          <p class="font-extrabold text-3xl text-primary mb-1">1,200+</p>
+          <p class="font-bold text-[clamp(10px,0.9vw,11px)] text-on-surface-variant uppercase tracking-widest leading-tight">Patients Heureux</p>
+        </div>
+        <div>
+          <p class="font-extrabold text-3xl text-primary mb-1">98%</p>
+          <p class="font-bold text-[clamp(10px,0.9vw,11px)] text-on-surface-variant uppercase tracking-widest leading-tight">Taux de Satisfaction</p>
+        </div>
+        <div>
+          <p class="font-extrabold text-3xl text-primary mb-1">100%</p>
+          <p class="font-bold text-[clamp(10px,0.9vw,11px)] text-on-surface-variant uppercase tracking-widest leading-tight">Dédicace Sourire</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-container-max mx-auto mt-16">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="bg-surface border border-outline-variant/50 rounded-3xl p-8">
+          <div class="w-12 h-12 rounded-2xl bg-primary-fixed/20 text-primary flex items-center justify-center mb-6">
+            <span class="material-symbols-outlined">favorite</span>
+          </div>
+          <h2 class="font-headline-md text-headline-md text-on-surface mb-3">Bienveillance</h2>
+          <p class="text-on-surface-variant leading-relaxed">
+            Une approche en douceur, avec des explications claires et un suivi attentif à chaque étape.
+          </p>
+        </div>
+
+        <div class="bg-surface border border-outline-variant/50 rounded-3xl p-8">
+          <div class="w-12 h-12 rounded-2xl bg-primary-fixed/20 text-primary flex items-center justify-center mb-6">
+            <span class="material-symbols-outlined">science</span>
+          </div>
+          <h2 class="font-headline-md text-headline-md text-on-surface mb-3">Technologie</h2>
+          <p class="text-on-surface-variant leading-relaxed">
+            Des solutions modernes et des équipements adaptés pour optimiser confort, précision et résultats.
+          </p>
+        </div>
+
+        <div class="bg-surface border border-outline-variant/50 rounded-3xl p-8">
+          <div class="w-12 h-12 rounded-2xl bg-primary-fixed/20 text-primary flex items-center justify-center mb-6">
+            <span class="material-symbols-outlined">verified</span>
+          </div>
+          <h2 class="font-headline-md text-headline-md text-on-surface mb-3">Qualité</h2>
+          <p class="text-on-surface-variant leading-relaxed">
+            Des protocoles rigoureux et une exigence constante pour des soins durables.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

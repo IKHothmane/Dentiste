@@ -1,0 +1,186 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Header from "../../../components/Header.astro";
+import Footer from "../../../components/Footer.astro";
+import { AppointmentButton } from "../../../components/AppointmentButton";
+---
+
+<BaseLayout title="Soins Préventifs - Dr PINTO KAREN">
+  <Header />
+
+  <main class="w-full">
+    <section class="relative w-full overflow-hidden py-section-padding bg-surface">
+      <div class="w-full px-6 lg:px-12 flex flex-col md:flex-row items-center gap-12">
+        <div class="w-full md:w-1/2 space-y-6">
+          <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold">
+            PRÉVENTION DENTAIRE
+          </span>
+          <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary">
+            Soins Préventifs
+          </h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Préserver la santé naturelle de vos dents est notre priorité. Une routine de soins réguliers est le meilleur investissement pour un sourire éclatant et durable, évitant ainsi des traitements plus complexes à l'avenir.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <AppointmentButton client:load label="Prendre Rendez-vous" phone="01 23 45 67 89" />
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 relative">
+          <div class="aspect-square rounded-3xl overflow-hidden shadow-2xl bg-surface-container-high">
+            <img
+              alt="Cabinet dentaire moderne"
+              class="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8heClXBwJBlHixVjlL-tumi_xg0POfjLuii_GOaUqiprSTruVuH9k0epSuFGEy-5pkoreZdB3T48ep9ZsnTw0cP2Q0FZqBSWcFbkHjtG6w7GrTL2IZowtFjS8RIRB7VaqJ7tVZe-fK_2I3cI2ya30VGUancZVTn-Iu9pf42Oj7nlM3FtEynAWqsQa13rB6nCOnlK9AGX5ai0aN_c99duy2QiTCwEAaWD8pbSg3bePX5gP2-cR0XffiUnQpRqQwF9UNz5MchaaKmU"
+            />
+          </div>
+
+          <div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-2xl shadow-xl border border-outline-variant hidden lg:block max-w-[280px]">
+            <div class="flex items-center gap-3 mb-2">
+              <div class="flex -space-x-2">
+                <div class="w-8 h-8 rounded-full bg-primary-fixed"></div>
+                <div class="w-8 h-8 rounded-full bg-secondary-fixed"></div>
+                <div class="w-8 h-8 rounded-full bg-tertiary-fixed"></div>
+              </div>
+              <div class="text-primary font-bold">4.9/5</div>
+            </div>
+            <p class="text-label-md font-label-md text-on-surface-variant italic">
+              "Une approche douce et rassurante pour toute la famille."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full bg-surface-container-low py-section-padding">
+      <div class="w-full px-6 lg:px-12">
+        <div class="text-center mb-16 space-y-4 max-w-2xl mx-auto">
+          <h2 class="font-headline-lg text-headline-lg text-primary">Nos Solutions de Prévention</h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Découvrez nos traitements spécialisés conçus pour protéger votre santé bucco-dentaire et celle de vos proches.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <a
+            class="md:col-span-8 bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant flex flex-col md:flex-row gap-8 items-center transition-all hover:shadow-lg hover:-translate-y-1"
+            href="/contact"
+          >
+            <div class="w-full md:w-1/2 space-y-4">
+              <div class="w-12 h-12 bg-primary-container/10 rounded-xl flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-3xl">clinical_notes</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md">Bilans de routine</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant">
+                Un examen complet semestriel permet de détecter précocement les caries ou les maladies des gencives, garantissant une intervention minimale et efficace.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-center gap-2 text-body-md text-on-surface-variant">
+                  <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  Examen clinique approfondi
+                </li>
+                <li class="flex items-center gap-2 text-body-md text-on-surface-variant">
+                  <span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  Radiographie panoramique numérique
+                </li>
+              </ul>
+              <span class="text-primary font-bold flex items-center gap-2 group">
+                En savoir plus
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              </span>
+            </div>
+            <div class="w-full md:w-1/2 aspect-[4/3] rounded-2xl overflow-hidden">
+              <img
+                alt="Bilan dentaire"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGwMEoVrd_o2s1YC-2_n6AKUfcnkeMQWsHOXwv5UGQvnAA6jmLXlMV15OHEHWS2fy0_8W44rZaq7ATQtTuG0vY7GN40vinml-zv4D3E_bTb2NuvtYiT-M0vxwr2VRWrfzX-BYs8f-tqqZqen91MfoKddDbvXeyUgyp2uQl0j_yKqO2bwdP95vrGLF_3wSkgs4ZgShhKsYeI3nNDfN9VLoqOEEp3HILqp9XcfJjwfPYnC1_hHIDYcCdwRo794zWW10S34Oag7I7240"
+              />
+            </div>
+          </a>
+
+          <a
+            class="md:col-span-4 bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant space-y-4 transition-all hover:shadow-lg hover:-translate-y-1"
+            href="/contact"
+          >
+            <div class="w-12 h-12 bg-primary-container/10 rounded-xl flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-3xl">clean_hands</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md">Détartrage &amp; Polissage</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Élimination de la plaque bactérienne et du tartre pour des gencives saines et des dents plus lisses.
+            </p>
+            <span class="text-primary font-bold flex items-center gap-2 group">
+              En savoir plus
+              <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </span>
+          </a>
+
+          <a
+            class="md:col-span-4 bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant space-y-4 transition-all hover:shadow-lg hover:-translate-y-1"
+            href="/contact"
+          >
+            <div class="w-12 h-12 bg-primary-container/10 rounded-xl flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-3xl">verified</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md">Scellement de sillons</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant">
+              Une protection indolore pour les enfants et adolescents, scellant les zones vulnérables aux caries.
+            </p>
+          </a>
+
+          <div class="md:col-span-8 bg-primary p-8 rounded-3xl flex flex-col md:flex-row gap-8 items-center text-on-primary shadow-xl">
+            <div class="w-full md:w-3/5 space-y-4">
+              <h3 class="font-headline-md text-headline-md">Conseils d'hygiène buccale</h3>
+              <p class="font-body-md text-body-md opacity-90">
+                Nous vous accompagnons au quotidien avec des méthodes de brossage personnalisées et des recommandations sur les meilleurs outils de soin.
+              </p>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="bg-primary-container/20 p-4 rounded-xl">
+                  <span class="material-symbols-outlined block mb-2">brush</span>
+                  <span class="font-label-md text-label-md font-bold">Technique de brossage</span>
+                </div>
+                <div class="bg-primary-container/20 p-4 rounded-xl">
+                  <span class="material-symbols-outlined block mb-2">nutrition</span>
+                  <span class="font-label-md text-label-md font-bold">Conseils nutritionnels</span>
+                </div>
+              </div>
+            </div>
+            <div class="w-full md:w-2/5 aspect-square rounded-2xl bg-on-primary/10 flex items-center justify-center">
+              <span class="material-symbols-outlined text-[80px]" style="font-variation-settings: 'wght' 200;">dentistry</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-section-padding">
+      <div class="w-full px-6 lg:px-12">
+        <div class="bg-surface-container-highest rounded-[40px] overflow-hidden relative border border-outline-variant/30">
+          <div class="relative px-8 md:px-20 py-16 md:py-24 text-center space-y-8">
+            <h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary max-w-3xl mx-auto">
+              Donnez à votre sourire l'attention qu'il mérite
+            </h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+              Planifiez votre bilan dès aujourd'hui et rejoignez nos patients qui ont choisi la sérénité au quotidien.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+              <AppointmentButton client:load label="Prendre RDV en ligne" phone="01 23 45 67 89" />
+              <div class="flex items-center gap-4 text-on-surface-variant">
+                <div class="w-12 h-12 bg-surface rounded-full flex items-center justify-center border border-outline-variant">
+                  <span class="material-symbols-outlined text-primary">call</span>
+                </div>
+                <div class="text-left">
+                  <p class="text-label-md font-label-md font-bold">Ou appelez-nous</p>
+                  <p class="font-bold">01 00 00 00 00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+

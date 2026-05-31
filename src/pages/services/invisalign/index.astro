@@ -1,0 +1,250 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Header from "../../../components/Header.astro";
+import Footer from "../../../components/Footer.astro";
+import { AppointmentButton } from "../../../components/AppointmentButton";
+---
+
+<BaseLayout title="Invisalign - Dr PINTO KAREN | Sourire & Confiance">
+  <Header />
+
+  <main class="w-full">
+    <section class="relative overflow-hidden pt-12 pb-24 lg:pt-20 lg:pb-32 bg-background">
+      <div class="absolute inset-0 hero-shape-blob -z-10 translate-x-1/2 -translate-y-1/4"></div>
+      <div class="w-full px-6 lg:px-12">
+        <div class="grid lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-7 space-y-8">
+            <div>
+              <span class="inline-block font-label-md text-label-md text-primary bg-primary-container/10 px-4 py-1.5 rounded-full mb-4 font-bold">
+                ORTHODONTIE INVISIBLE
+              </span>
+              <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-background mb-6">
+                Un alignement parfait, <br />
+                <span class="text-gradient">en toute discrétion.</span>
+              </h1>
+              <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                Découvrez Invisalign : le système d'aligneurs transparents leader mondial pour redresser vos dents confortablement, sans bagues ni fils métalliques.
+              </p>
+            </div>
+
+            <div class="flex flex-wrap gap-4">
+              <AppointmentButton client:load label="Consultation Gratuite" phone="01 23 45 67 89" />
+              <a
+                class="border border-outline text-primary font-label-md text-label-md px-8 py-4 rounded-xl hover:bg-surface-container transition-all duration-300 font-bold"
+                href="#resultats"
+              >
+                Voir les résultats
+              </a>
+            </div>
+
+            <div class="flex items-center gap-6 pt-4 border-t border-outline-variant/30">
+              <div class="flex -space-x-3">
+                <img
+                  alt="Patient"
+                  class="w-12 h-12 rounded-full border-2 border-surface object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRCbYqVy0-RMgNvh6pHDwR9T0s_vxDQf-cqjDbCzSU60wLsz0L4_etCJ9P_qaJd2YJubVOjpqGok7ktGOYFr30gm1KOkFiC2rgDDbrnmWHbZOvgVLeWTsUNxCc-NQ_6eXork-aK2bBEFHDM_6B2ESxQWZ1R82JRYZEQOBLFN6Tp4DrsJhcu30a13LfWBlmffpxrIYdWLe_nWpeNzubwc1_59PYDgLWnlVwbu1Y_P8gFmNoz9xZ7n9Psn4gEihECV6_91Q2-xcya4E"
+                />
+                <img
+                  alt="Patient"
+                  class="w-12 h-12 rounded-full border-2 border-surface object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhqLNS58m1jiKY-VO_TEbJsBhnDbvMcqAxn6R88E-bC8rqlmEkrZu5XqrcPBemnAWF5mWgwoIxMP_97YjHS38N4EUL87hTsKSH63TZUn9yWhEtVO8Ly1zzzZDbtFY0W3Q7LfP9x3zWvfP5sPEi_zSAkroj_g42WDUZeZNo9Tb8DRoMiLcgZE89kGB4_5c1M69JMICi61XZPprizojsKWlypVdyCKdKehhs60c0aLxIxlTuldCKZ8O6iQ_zra3BjfUHP5wOVJTKBvc"
+                />
+                <img
+                  alt="Patient"
+                  class="w-12 h-12 rounded-full border-2 border-surface object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeX87hBZWolCYl9gLsA7dRvlhECbKFuO_1d-mYiV89JdgLvHzIxp4I26qF_AIaDO7K7du09TlUKc3ojRrvmQhCxDEqcpYisBoqeFo3G31csxffCdIe_HTJxfpRza6FAayR7rEtG0_qdLpiyovAmpRLHI3TI13fprZjMGFM-YrPajx55P9PfD0a5fP4VuOL73V0Cm5Av6GftqeQ8e_KJ81hgh4CanXploeS6JQjpJY7I3lC3vWZGXSfIKU0B6xEkmv1nP_3nO-UryA"
+                />
+                <div class="w-12 h-12 rounded-full border-2 border-surface bg-primary text-on-primary flex items-center justify-center font-label-md font-bold">
+                  +2k
+                </div>
+              </div>
+              <p class="text-on-surface-variant font-body-md">
+                <span class="font-bold text-on-surface">98% de satisfaction</span><br />
+                patients traités à Paris
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 relative">
+            <div class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl relative">
+              <img
+                class="w-full h-full object-cover"
+                alt="Sourire aligné"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUH8JmP_fjyUQaG4ovZXTuO2iB0gJR24yAwRBPWlBB_PgZvDZDvCCOAt1zWtDrY4D1M5urp2PkklHsGpB_Xo7VUlbK1mFDSiluQalRx0Fny86Dk7gFtizz-R9wL0A4y1x-cIKqxSTCP6BW05EGmJXMugG597Y0vB9FL5Gcs3mn24dJONyfR1q1-4QdaEBHZ__mFsHj6XkVAAOtNgCFKQ3TY0gd_3avEkMa1-fTra2jW_qYL4CEIQGsXQ_0yPaMmwDd1FUUdO1acDA"
+              />
+            </div>
+
+            <div class="absolute -bottom-6 -left-6 bg-surface p-6 rounded-2xl border border-outline-variant shadow-lg max-w-[220px] hidden sm:block">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="w-10 h-10 bg-primary-container/20 rounded-full flex items-center justify-center">
+                  <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">visibility_off</span>
+                </div>
+                <span class="font-headline-md text-sm font-bold">Invisible</span>
+              </div>
+              <p class="text-xs text-on-surface-variant">
+                Personne ne remarquera que vous portez des aligneurs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-surface-container-low py-section-padding" id="resultats">
+      <div class="w-full px-6 lg:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <h2 class="font-headline-lg text-headline-lg mb-4 text-on-surface">Pourquoi choisir Invisalign ?</h2>
+          <p class="text-on-surface-variant">
+            L'alternative moderne aux appareils dentaires traditionnels pour un confort inégalé.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-surface p-8 rounded-3xl border border-outline-variant hover:border-primary transition-all duration-300 group">
+            <div class="w-14 h-14 bg-primary-container/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+              <span class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl">auto_awesome</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md mb-3">100% Discret</h3>
+            <p class="text-on-surface-variant">
+              Fabriqués en polymère transparent breveté SmartTrack, les aligneurs sont quasiment invisibles à l'œil nu.
+            </p>
+          </div>
+
+          <div class="bg-surface p-8 rounded-3xl border border-outline-variant hover:border-primary transition-all duration-300 group">
+            <div class="w-14 h-14 bg-primary-container/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+              <span class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl">restaurant</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md mb-3">Totalement Amovible</h3>
+            <p class="text-on-surface-variant">
+              Mangez ce que vous voulez. Retirez simplement vos aligneurs pour les repas et l'hygiène quotidienne.
+            </p>
+          </div>
+
+          <div class="bg-surface p-8 rounded-3xl border border-outline-variant hover:border-primary transition-all duration-300 group">
+            <div class="w-14 h-14 bg-primary-container/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary transition-colors duration-300">
+              <span class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl">mood</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md mb-3">Confort Premium</h3>
+            <p class="text-on-surface-variant">
+              Pas d'irritation, pas de fils qui piquent. Les bords sont découpés au laser pour s'adapter à votre gencive.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-section-padding bg-background">
+      <div class="w-full px-6 lg:px-12">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="relative order-2 lg:order-1">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="space-y-4">
+                <div class="aspect-square rounded-3xl overflow-hidden shadow-lg border border-outline-variant">
+                  <img
+                    class="w-full h-full object-cover"
+                    alt="Scan dentaire 3D"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeNKPul3pktSG7bQ3ZpGzV2vYN-ZTqVCgayjqcUku3WTxHSGKuK6OpXis9VCKnD7TyZtuCtbFhTYx0Bg3hkw6WnJwD129HMvQ4q4eB-onDqsIj2txoUok1EPfG40JHs3TGH9yi2Z__oU8yCZyznfcg1gekSu1wIManJBMVHP_u7l1LmP2aRxcse5bG-0K7AMNmVdxEkDyD-HXIGIYnZjBM9TM7mltVjneMLq8wU0y9-rO8bVP7P78NpwVjdgtbT5crymjJ51gKaa0"
+                  />
+                </div>
+                <div class="bg-primary p-8 rounded-3xl text-on-primary">
+                  <h3 class="font-display-lg text-4xl mb-2">90%</h3>
+                  <p class="text-sm opacity-90">Précision accrue grâce au scan numérique Itero.</p>
+                </div>
+              </div>
+              <div class="pt-12 space-y-4">
+                <div class="aspect-[3/4] rounded-3xl overflow-hidden shadow-lg border border-outline-variant">
+                  <img
+                    class="w-full h-full object-cover"
+                    alt="Aligneurs transparents"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjZ4GMX7jKuPvxGxjoeSyMDiOi9ofbAErKbg4BTYAxdH9KLAuX_gIorBBK6SUbSTSGt6ku36koWB6iImEe2zDy1L-UxCbow3Oo7ZagmgEthWKtDesALJiUjEWZ8__IqznEDT60SoyEwgci9MlEHhMPgEKVfJd23FL4W986bePl3aav2aYvvZhmoKHXbBhaZg6Y8IpOligjGbgv0TTrW_PbZGaT9n3zBA3-Y4VDcJZD6mIFquj9XQOwIOkWkx9I5RSPPbwjv1IkXv8"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-1 lg:order-2 space-y-10">
+            <div>
+              <h2 class="font-headline-lg text-headline-lg mb-4 text-on-surface">Votre parcours vers un nouveau sourire</h2>
+              <p class="text-on-surface-variant">Une méthode structurée et assistée par ordinateur pour des résultats prévisibles.</p>
+            </div>
+
+            <div class="space-y-8">
+              <div class="flex gap-6 items-start">
+                <div class="flex-shrink-0 w-12 h-12 bg-primary rounded-full flex items-center justify-center text-on-primary font-bold">
+                  1
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-lg mb-1">Consultation &amp; Scan 3D</h3>
+                  <p class="text-on-surface-variant">
+                    Nous réalisons une empreinte numérique 3D précise de vos dents sans pâte désagréable.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-6 items-start">
+                <div class="flex-shrink-0 w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary font-bold">
+                  2
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-lg mb-1">Plan de Traitement Virtuel</h3>
+                  <p class="text-on-surface-variant">
+                    Visualisez le mouvement futur de vos dents et votre sourire final avant même de commencer.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-6 items-start">
+                <div class="flex-shrink-0 w-12 h-12 bg-primary-fixed-dim rounded-full flex items-center justify-center text-primary font-bold">
+                  3
+                </div>
+                <div>
+                  <h3 class="font-headline-md text-lg mb-1">Fabrication Sur Mesure</h3>
+                  <p class="text-on-surface-variant">
+                    Vos aligneurs sont fabriqués individuellement pour chaque étape de votre traitement.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-section-padding">
+      <div class="w-full px-6 lg:px-12">
+        <div class="bg-primary rounded-[3rem] p-12 lg:p-20 text-center relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
+          <div class="absolute bottom-0 left-0 w-64 h-64 bg-primary-container/20 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
+          <h2 class="font-headline-lg text-headline-lg text-on-primary mb-6 relative z-10">Prêt à transformer votre sourire ?</h2>
+          <p class="text-on-primary/80 font-body-lg text-body-lg mb-10 max-w-2xl mx-auto relative z-10">
+            Prenez rendez-vous aujourd'hui pour votre bilan orthodontique personnalisé.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
+            <AppointmentButton client:load label="Réserver ma séance" phone="01 23 45 67 89" />
+            <a
+              class="border border-on-primary/30 text-on-primary font-bold px-10 py-4 rounded-2xl hover:bg-white/10 transition-all duration-300"
+              href="tel:0123456789"
+            >
+              Appeler le cabinet
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .text-gradient {
+    background: linear-gradient(135deg, #00685e 0%, #008378 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-shape-blob {
+    background: radial-gradient(circle at center, rgba(104, 217, 202, 0.15) 0%, rgba(248, 250, 251, 0) 70%);
+  }
+</style>

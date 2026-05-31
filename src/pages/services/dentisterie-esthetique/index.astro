@@ -1,0 +1,214 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Header from "../../../components/Header.astro";
+import Footer from "../../../components/Footer.astro";
+import { AppointmentButton } from "../../../components/AppointmentButton";
+---
+
+<BaseLayout title="Dentisterie Esthétique | Dr PINTO KAREN">
+  <Header />
+
+  <main class="w-full">
+    <section class="relative w-full min-h-[70vh] flex items-center overflow-hidden bg-surface">
+      <div class="absolute inset-0">
+        <img
+          alt="Dentisterie esthétique"
+          class="w-full h-full object-cover brightness-95"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuD54UjyfJwitz4q5Mzp05ehpBbH2I07ZdugeoPQEzihsad9B7-eJkajNA6dUIb85O1LRAEV8a-UHTaRtdP-IPC8R9vVHkofd5xF4L24ccxhWGgOmirhlVZDV9PEVBK_2xqGFFLkY-Oqcv_MPHOeoELumM1Kru5d7QEOLqAVoz-b-vGdWbBONFA_4VeCL30-QtgwF0YDUZNqAp2FAsgEh5JGlAXc7t3A92yAPPQYrjwCrHVUPhHC1Brfk4q1xlvPhu5whcC05KJREag"
+        />
+        <div class="absolute inset-0 bg-gradient-to-r from-surface/90 via-surface/40 to-transparent"></div>
+      </div>
+
+      <div class="relative z-10 w-full px-6 lg:px-12 py-section-padding grid md:grid-cols-2 gap-8">
+        <div class="flex flex-col gap-6">
+          <span class="inline-block bg-primary-container text-on-primary-container px-4 py-1 rounded-full text-label-md w-fit font-bold">
+            Sourire &amp; Confiance
+          </span>
+
+          <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary">
+            Dentisterie Esthétique
+          </h1>
+
+          <p class="font-headline-md text-headline-md text-secondary max-w-md">
+            Sublimez votre sourire. Retrouvez l'assurance et l'éclat que vous méritez.
+          </p>
+
+          <div class="flex flex-wrap gap-4 mt-2">
+            <AppointmentButton client:load label="Prendre RDV pour un bilan" phone="01 23 45 67 89" />
+            <a class="border border-primary text-primary px-8 py-4 rounded-full font-label-md hover:bg-primary/5 transition-colors" href="#resultats">
+              Voir nos résultats
+            </a>
+          </div>
+
+          <div class="flex items-center gap-4 mt-6">
+            <div class="flex text-yellow-500">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="text-label-md text-secondary font-bold">Plus de 500 sourires transformés</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full bg-surface-container-low py-section-padding" id="resultats">
+      <div class="w-full px-6 lg:px-12">
+        <div class="text-center mb-16 max-w-2xl mx-auto">
+          <h2 class="font-headline-lg text-headline-lg text-primary mb-4">Nos Soins d'Excellence</h2>
+          <p class="text-secondary font-body-lg">
+            Chaque traitement est conçu sur-mesure pour harmoniser votre dentition et révéler votre beauté naturelle.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <div class="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant hover:border-primary transition-all duration-300 flex flex-col md:flex-row gap-8">
+            <div class="flex-1 flex flex-col justify-center">
+              <span class="material-symbols-outlined text-primary text-4xl mb-4">brightness_high</span>
+              <h3 class="font-headline-md text-headline-md mb-2">Blanchiment Dentaire</h3>
+              <p class="text-secondary mb-6">
+                Éclaircissement professionnel haute performance pour gagner plusieurs teintes en une seule séance. Une technologie sûre pour votre émail.
+              </p>
+              <ul class="space-y-2 mb-8 text-on-surface-variant font-body-md">
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span> Résultat immédiat et durable
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span> Application sous contrôle médical
+                </li>
+              </ul>
+              <a class="text-primary font-bold flex items-center gap-2 hover:underline" href="/contact">
+                En savoir plus <span class="material-symbols-outlined">chevron_right</span>
+              </a>
+            </div>
+
+            <div class="flex-1 rounded-lg overflow-hidden h-64 md:h-auto">
+              <img
+                alt="Blanchiment"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHJd8-araozy1nh2opDdLzxC4kf259oSfJBBxH49fRcct-kN1bsZ1F66APlmTMVOvCbMivat4Ht_cC00mx7HI77RoKsqu4wxxANK4e2ExZooEjO54qW7JteZ2gFdTgsshT1-U5R08Oua_LqCIyx_-_COYNoplQTdWLGadjVAcw43B5Ka8gvtxm2ddGIrp4ERrHVKlKJ541iIyz0t4E_J8bfbU4OqWHSeJF4OV60PGr_1fjg5lTttZkYhrSHUpuOeJd4SUilMGmbQA"
+              />
+            </div>
+          </div>
+
+          <div class="md:col-span-4 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant hover:border-primary transition-all duration-300 flex flex-col">
+            <span class="material-symbols-outlined text-primary text-4xl mb-4">waves</span>
+            <h3 class="font-headline-md text-headline-md mb-2">Gingivoplastie</h3>
+            <p class="text-secondary mb-6">
+              Remodelage esthétique des gencives pour corriger un sourire gingival et redonner des proportions idéales à vos dents.
+            </p>
+            <div class="mt-auto pt-6 border-t border-outline-variant">
+              <span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-label-md font-bold">
+                Précision Laser
+              </span>
+            </div>
+          </div>
+
+          <div class="md:col-span-4 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant hover:border-primary transition-all duration-300 flex flex-col">
+            <span class="material-symbols-outlined text-primary text-4xl mb-4">layers</span>
+            <h3 class="font-headline-md text-headline-md mb-2">Facettes Céramiques</h3>
+            <p class="text-secondary mb-6">
+              Correction de la forme, de la teinte et de l'alignement pour un sourire sur-mesure.
+            </p>
+            <div class="mt-auto pt-6 border-t border-outline-variant">
+              <span class="inline-block bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full text-label-md font-bold">
+                Finition Artisanale
+              </span>
+            </div>
+          </div>
+
+          <div class="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl border border-outline-variant hover:border-primary transition-all duration-300 flex flex-col md:flex-row gap-8">
+            <div class="flex-1 rounded-lg overflow-hidden h-64 md:h-auto order-2 md:order-1">
+              <img
+                alt="Invisalign"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDxdFXtejfyIT__3u-68TdodooQWuGinEgWq7jid0-br9JWJh6Hkq6v5GnRVeqo8FCTV2JQenceO_4VP-VEOGe52S5a0OBc_XjNxo_8L0870LjjP_GHY0T8hZVAB-CIQmKi1J96woF8wmlut9TfUKhOmO21KI_r4FccmMUNkBeP0g9kwSPFEX-mKircLPs5BlIMbK3OmhSwd56MVUK_mMU0zvEhCiPHJwR_Ldr5knq-LxVQ4XIsP3eg_KgvElrnVpwiUdVY_Nr_Uc"
+              />
+            </div>
+
+            <div class="flex-1 flex flex-col justify-center order-1 md:order-2">
+              <span class="material-symbols-outlined text-primary text-4xl mb-4">align_horizontal_center</span>
+              <h3 class="font-headline-md text-headline-md mb-2">Invisalign</h3>
+              <p class="text-secondary mb-6">
+                Redressez vos dents en toute discrétion grâce à nos gouttières transparentes amovibles.
+              </p>
+              <ul class="space-y-2 mb-8 text-on-surface-variant font-body-md">
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span> Quasi invisible
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-primary text-sm">check_circle</span> Confortable et amovible
+                </li>
+              </ul>
+              <a class="text-primary font-bold flex items-center gap-2 hover:underline" href="/contact">
+                Étude personnalisée <span class="material-symbols-outlined">chevron_right</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-section-padding bg-surface">
+      <div class="w-full px-6 lg:px-12 grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="font-headline-lg text-headline-lg text-primary mb-6">Une approche centrée sur votre harmonie</h2>
+          <p class="text-secondary font-body-lg mb-8 leading-relaxed max-w-xl">
+            Chez le Dr PINTO KAREN, l'esthétique ne se limite pas à la blancheur. Nous analysons la symétrie de votre visage, la ligne de vos lèvres et votre personnalité pour créer un sourire qui vous ressemble vraiment.
+          </p>
+
+          <div class="grid grid-cols-2 gap-8">
+            <div class="flex flex-col">
+              <span class="text-4xl font-bold text-primary mb-2">100%</span>
+              <span class="text-label-md uppercase tracking-wider text-on-surface-variant font-bold">Sur-mesure</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-4xl font-bold text-primary mb-2">High-Tech</span>
+              <span class="text-label-md uppercase tracking-wider text-on-surface-variant font-bold">Empreinte 3D</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="absolute -top-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl -z-10"></div>
+          <div class="bg-surface-container-lowest p-4 rounded-2xl shadow-[0px_10px_30px_rgba(20,155,142,0.08)]">
+            <img
+              alt="Résultat esthétique"
+              class="rounded-xl w-full h-[clamp(320px,45vw,520px)] object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN9nlsLDGzhqTqaC0-eSCsBKz-bft5rHZruxjUDMBruivpmTQSCvmgESLHqFeyW0ryKHLvBOg6t_G_boQNMDI60_rgIlSlNuZgyh6rO4uP1HIpr-IRrE65E7aYSKIqVdga5lUVS5Dv-bOSYP3zEjEkd63qlkl8M4AhB1eqn8Ob5c3Sjg1A8VED-gaswVUCGG6tJHpocFWUnmhLIF_yvXDwIX13gTj9RgU2ttcaD1Ani8USK0Cnwqu1fSHzKuwOV8mc0ckF_H0jJ2c"
+            />
+          </div>
+
+          <div class="absolute bottom-10 right-10 bg-surface/85 backdrop-blur-md p-6 rounded-xl border border-outline-variant/50 shadow-[0px_10px_30px_rgba(20,155,142,0.08)] max-w-[240px]">
+            <p class="italic text-on-surface-variant font-body-md mb-2">
+              "Mon nouveau sourire a totalement changé ma confiance en moi. Une expérience d'exception."
+            </p>
+            <p class="font-bold text-primary">— Sophie R.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full bg-primary py-section-padding overflow-hidden relative">
+      <div class="absolute top-0 right-0 w-1/3 h-full bg-primary-container opacity-20 -skew-x-12 translate-x-1/2"></div>
+      <div class="w-full px-6 lg:px-12 relative z-10 text-center">
+        <h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary mb-8">
+          Prêt à transformer votre sourire ?
+        </h2>
+        <p class="text-primary-fixed font-body-lg mb-12 max-w-xl mx-auto opacity-90">
+          Réservez votre consultation initiale pour un bilan esthétique complet et découvrez les possibilités pour vos dents.
+        </p>
+        <a class="bg-surface text-primary px-10 py-5 rounded-full font-headline-md hover:shadow-2xl transition-all duration-300 hover:scale-105 inline-flex items-center justify-center" href="/contact">
+          Prendre RDV pour un bilan esthétique
+        </a>
+        <p class="text-on-primary/60 text-label-md mt-8 flex items-center justify-center gap-2 font-bold">
+          <span class="material-symbols-outlined text-sm">calendar_month</span> Disponibilités sous 48h
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

@@ -1,0 +1,205 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Header from "../../../components/Header.astro";
+import Footer from "../../../components/Footer.astro";
+import { AppointmentButton } from "../../../components/AppointmentButton";
+---
+
+<BaseLayout title="Blanchiment Dentaire | Dr PINTO KAREN">
+  <Header />
+
+  <main class="w-full bg-mesh">
+    <section class="w-full py-section-padding">
+      <div class="w-full px-6 lg:px-12 flex flex-col md:flex-row items-center gap-12 overflow-hidden">
+        <div class="flex-1 space-y-6">
+          <div class="inline-flex items-center gap-2 bg-primary-container/10 text-primary px-4 py-1.5 rounded-full font-label-md text-label-md font-bold">
+            <span class="material-symbols-outlined text-sm">stars</span>
+            Sourire Éclatant &amp; Confiance
+          </div>
+          <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface leading-tight">
+            Retrouvez la blancheur <br /> <span class="text-primary">naturelle de votre sourire.</span>
+          </h1>
+          <p class="text-on-surface-variant text-body-lg max-w-xl">
+            Découvrez nos solutions de blanchiment dentaire professionnel : des résultats visibles immédiatement, une sécurité optimale et un accompagnement sur-mesure.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-4">
+            <AppointmentButton client:load label="Prendre rendez-vous" phone="01 23 45 67 89" />
+            <a
+              class="bg-surface border border-outline-variant text-on-surface-variant px-8 py-4 rounded-xl font-headline-md text-headline-md hover:bg-surface-container-low transition-all flex items-center gap-2"
+              href="/contact"
+            >
+              Voir les tarifs
+            </a>
+          </div>
+          <div class="flex items-center gap-6 pt-6 grayscale opacity-70 flex-wrap">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary">verified</span>
+              <span class="text-label-md font-label-md font-bold">Produits certifiés EU</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary">schedule</span>
+              <span class="text-label-md font-label-md font-bold">Résultats en 1h</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-1 relative w-full">
+          <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-primary/5 rounded-full blur-3xl"></div>
+          <img
+            alt="Blanchiment Dentaire"
+            class="w-full aspect-[4/5] object-cover rounded-[2rem] shadow-2xl border-8 border-surface"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxXfo4GL2XeXCVXbzhAGbx0hHA6h0ZgoXvK6XL-FCGf0ZUWCnSgm6F92O6TULwlYC9zRvzPxMuZnPZ6qRwXcwILz3WCln_IgmxWdf22Tx6P4P6PAmSTvpY14oRc7-v-70TzvLmSn-x34z7xvanyq8voxZngjUQpwOynwHW8w29C13KW-nqtt4x7KjYQy7NKjou4VeAdAABA1Px9mD-j0v2E-OJrkt1dbXsSKrLXmAvrGle6bQqT_HzhUPci5xBuZ4Dvo6behbh-n8"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full bg-surface-container-low py-section-padding">
+      <div class="w-full px-6 lg:px-12">
+        <div class="text-center mb-16 space-y-4 max-w-2xl mx-auto">
+          <h2 class="font-headline-lg text-headline-lg text-on-surface">Nos deux approches de blanchiment</h2>
+          <p class="text-on-surface-variant text-body-md">
+            Choisissez la méthode qui correspond le mieux à votre rythme de vie et à vos objectifs esthétiques.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-surface-container-lowest p-10 rounded-[2rem] border border-outline-variant card-hover-effect flex flex-col items-start gap-6">
+            <div class="w-16 h-16 bg-primary-container/10 rounded-2xl flex items-center justify-center">
+              <span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+            </div>
+            <div class="space-y-4">
+              <h3 class="font-headline-md text-headline-md text-on-surface">Blanchiment au Cabinet</h3>
+              <p class="text-on-surface-variant text-body-md">
+                Une séance unique d'environ 60 à 90 minutes pour un résultat instantané et spectaculaire sous supervision médicale directe.
+              </p>
+              <ul class="space-y-3 pt-4">
+                <li class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary">check_circle</span>
+                  <span>Résultat immédiat (gain de 2 à 4 teintes)</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary">check_circle</span>
+                  <span>Protection complète des gencives</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-primary">check_circle</span>
+                  <span>Séance confortable en un seul rendez-vous</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bg-surface-container-lowest p-10 rounded-[2rem] border border-outline-variant card-hover-effect flex flex-col items-start gap-6">
+            <div class="w-16 h-16 bg-secondary-container/30 rounded-2xl flex items-center justify-center">
+              <span class="material-symbols-outlined text-secondary text-4xl" style="font-variation-settings: 'FILL' 1;">home</span>
+            </div>
+            <div class="space-y-4">
+              <h3 class="font-headline-md text-headline-md text-on-surface">Kits à Domicile (Gouttières)</h3>
+              <p class="text-on-surface-variant text-body-md">
+                Un traitement progressif et durable utilisant des gouttières sur-mesure réalisées au cabinet, à porter quelques heures par jour.
+              </p>
+              <ul class="space-y-3 pt-4">
+                <li class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-secondary">check_circle</span>
+                  <span>Stabilisation durable du résultat</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-secondary">check_circle</span>
+                  <span>Gouttières anatomiques personnalisées</span>
+                </li>
+                <li class="flex items-center gap-3">
+                  <span class="material-symbols-outlined text-secondary">check_circle</span>
+                  <span>Contrôle total de l'intensité</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-section-padding">
+      <div class="w-full px-6 lg:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-12 grid-rows-none md:grid-rows-2 gap-8">
+          <div class="md:col-span-8 bg-surface border border-outline-variant rounded-[2rem] p-10 flex flex-col justify-center">
+            <h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Pourquoi choisir le blanchiment médical ?</h2>
+            <p class="text-on-surface-variant text-body-lg max-w-xl">
+              Contrairement aux solutions en vente libre, le blanchiment supervisé par un chirurgien-dentiste garantit des concentrations de gel adaptées et sécurisées pour l'émail, tout en traitant les causes profondes de la coloration.
+            </p>
+          </div>
+
+          <div class="md:col-span-4 bg-primary text-on-primary rounded-[2rem] p-10 flex flex-col justify-between">
+            <span class="material-symbols-outlined text-5xl">verified_user</span>
+            <div>
+              <div class="font-display-lg text-display-lg-mobile mb-2">98%</div>
+              <p class="font-label-md text-label-md opacity-80">Taux de satisfaction patient après traitement</p>
+            </div>
+          </div>
+
+          <div class="md:col-span-4 bg-surface-container rounded-[2rem] overflow-hidden group">
+            <img
+              alt="Équipement clinique"
+              class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYCB1HMpyU37jweJ8urUgGU5-yYKPt3Z4yM9hiir_f6QUFLc1TS0rmlOdUlA2FebZLg4MGLQr623cftqPQXkAU1rYJLO3csLY5WRIF0SPZ-j7dPstovzjRotIxwQIJySrJe8WsLmKgp7_MgvqY1rDBGcmQqBtVhj68VjIl2URwOiM76xh2KRmat2JvBw_L0eacQyRUreQcB4kUkWxDw3Kd86v-9P_jKJwltG6lUPXhaqaBtoKAaowsg6elHl7SR2oMhDvziAHIDG0"
+            />
+          </div>
+
+          <div class="md:col-span-8 bg-surface-container-highest rounded-[2rem] p-10 flex items-center gap-10">
+            <div class="flex-1 space-y-4">
+              <h3 class="font-headline-md text-headline-md">Entretien longue durée</h3>
+              <p class="text-on-surface-variant text-body-md">
+                Nous vous fournissons un guide complet pour maintenir l'éclat de votre sourire face au café, thé et tabac.
+              </p>
+            </div>
+            <div class="hidden sm:block">
+              <span class="material-symbols-outlined text-primary text-6xl">flare</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full pb-section-padding">
+      <div class="w-full px-6 lg:px-12">
+        <div class="bg-inverse-surface text-inverse-on-surface rounded-[3rem] p-12 md:p-20 text-center relative overflow-hidden">
+          <div class="absolute top-0 right-0 w-64 h-64 bg-primary-container/20 blur-[100px] rounded-full"></div>
+          <div class="absolute bottom-0 left-0 w-64 h-64 bg-primary-container/10 blur-[100px] rounded-full"></div>
+          <h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-8 relative z-10">
+            Prêt à illuminer votre sourire ?
+          </h2>
+          <p class="text-body-lg mb-12 opacity-80 max-w-2xl mx-auto relative z-10">
+            Prenez rendez-vous pour une consultation esthétique et recevez un diagnostic personnalisé pour votre blanchiment.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-6 justify-center relative z-10">
+            <AppointmentButton client:load label="Réserver ma consultation" phone="01 23 45 67 89" />
+            <a
+              class="border-2 border-primary-container text-primary-fixed-dim px-10 py-5 rounded-full font-headline-md text-headline-md hover:bg-primary-container/10 transition-colors"
+              href="tel:0123456789"
+            >
+              Appeler le cabinet
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .bg-mesh {
+    background-color: #f8fafb;
+    background-image: radial-gradient(at 0% 0%, rgba(104, 217, 202, 0.15) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(0, 104, 94, 0.05) 0px, transparent 50%);
+  }
+
+  .card-hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover-effect:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 10px 30px rgba(20, 155, 142, 0.08);
+  }
+</style>

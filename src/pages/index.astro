@@ -1,0 +1,211 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { AppointmentButton } from "../components/AppointmentButton";
+---
+
+<BaseLayout title="Dr PINTO KAREN - Chirurgien Dentiste">
+  <Header />
+
+  <main>
+    <section class="w-full py-section-padding px-6 lg:px-12 relative overflow-hidden" id="accueil">
+      <div class="absolute top-0 right-0 -z-10 w-1/2 h-full bg-gradient-to-l from-primary-fixed/10 to-transparent opacity-50 rounded-l-full"></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="flex flex-col gap-6">
+          <div class="inline-flex items-center gap-2 bg-surface-container text-primary font-bold text-xs px-4 py-2 rounded-full w-fit tracking-wide uppercase">
+            <span class="material-symbols-outlined text-xs">verified</span>
+            <span>Cabinet Dentaire Moderne &amp; Accueillant</span>
+          </div>
+
+          <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface text-balance leading-[1.1]">
+            Votre Sourire,<br />
+            <span class="text-primary relative inline-block">
+              Notre Priorité
+              <svg
+                class="absolute -bottom-2 left-0 w-full text-primary-fixed-dim/40"
+                fill="none"
+                viewBox="0 0 200 12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M2 10C50 2 150 2 198 10" stroke="currentColor" stroke-linecap="round" stroke-width="4"></path>
+              </svg>
+            </span>
+          </h1>
+
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg leading-relaxed">
+            Des soins modernes, une technologie de pointe et une approche en douceur. Retrouvez un sourire éclatant dans un environnement serein.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-4">
+            <AppointmentButton client:load label="Prendre RDV" phone="01 23 45 67 89" />
+            <a
+              class="border-2 border-outline-variant text-on-surface font-bold text-label-md px-8 py-4 rounded-lg hover:border-primary hover:text-primary transition-all flex items-center gap-2 bg-surface"
+              href="/a-propos"
+            >
+              <span class="material-symbols-outlined text-sm">play_circle</span>
+              Visiter le cabinet
+            </a>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-6 mt-8 pt-8 border-t border-surface-container-high">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-primary-fixed/30 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined">health_and_safety</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-bold text-sm text-on-surface">1200+ Patients</span>
+                <span class="font-body-md text-xs text-on-surface-variant">nous font confiance</span>
+              </div>
+            </div>
+
+            <div class="w-px h-10 bg-surface-container-high hidden sm:block"></div>
+
+            <div class="flex items-center gap-3">
+              <div class="flex text-amber-500">
+                <span class="material-symbols-outlined scale-75" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined scale-75" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined scale-75" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined scale-75" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined scale-75" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <div class="flex flex-col">
+                <span class="font-bold text-sm text-on-surface">Note 5 Étoiles</span>
+                <span class="font-body-md text-xs text-on-surface-variant">Sur Google Avis</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative w-full aspect-[3/2] md:aspect-[4/5] max-w-xs sm:max-w-sm md:max-w-sm lg:max-w-md mx-auto rounded-3xl overflow-hidden bg-surface-container-high shadow-2xl">
+          <img
+            alt="Cabinet dentaire"
+            class="object-cover w-full h-full"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1GLfhT_RmFPmxWvlP97_F3tLCWzVjgczVf3mL55_-F3E0y3ticItZRisEdsugtDUvVhAkNTcIaI3u8c2oYj8Su6Sq3hm2ve9i-YuXxhi5LKBl6DU_iI2s1Nm0HNr8lMaNQ8Zz_PKxK3cKH3-8-v5AsogH9cZ1hXMnYA7z70nkjd1LH5syBPzvabuXGGO9R0e2Yh7WI5kx0KOxFW5CNaz6nOqsnqcEka3C_FQqD5guooKd0NBWxRB5D_TUcfyXaKgee2AZIKzzUJs"
+          />
+
+          <div class="absolute bottom-6 left-6 bg-surface/95 p-5 rounded-2xl shadow-xl border border-surface-container-high flex items-center gap-4 backdrop-blur-sm">
+            <div class="w-12 h-12 bg-primary text-on-primary rounded-full flex items-center justify-center">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+            </div>
+            <div>
+              <p class="font-extrabold text-xl text-on-surface leading-tight">15+ Ans</p>
+              <p class="font-medium text-xs text-on-surface-variant uppercase tracking-wider">Expertise Clinique</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-section-padding bg-surface-container-lowest" id="services">
+      <div class="w-full px-6 lg:px-12">
+        <div class="text-center mb-16">
+          <h2 class="font-headline-lg text-headline-lg text-on-surface mb-6 text-balance">L'Excellence Dentaire Complète</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+            Des soins adaptés à chaque sourire, allant de la prévention de routine aux interventions esthétiques avancées.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <a class="bg-surface border border-outline-variant/50 rounded-2xl p-8 hover:border-primary/50 hover:shadow-xl transition-all group flex flex-col h-full" href="/services/soins-preventifs">
+            <div class="w-14 h-14 bg-primary-fixed/20 text-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+              <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'wght' 300;">dentistry</span>
+            </div>
+            <h3 class="font-headline-md text-xl text-on-surface mb-4">Soins Préventifs</h3>
+            <p class="font-body-md text-on-surface-variant/90 mb-8 flex-grow leading-relaxed">
+              Contrôles de routine, détartrage et conseils d'hygiène pour maintenir vos dents et gencives en parfaite santé sur le long terme.
+            </p>
+            <span class="inline-flex items-center text-primary font-bold text-sm group-hover:translate-x-1 transition-transform">
+              En savoir plus <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span>
+            </span>
+          </a>
+
+          <a class="bg-surface border border-outline-variant/50 rounded-2xl p-8 hover:border-primary/50 hover:shadow-xl transition-all group flex flex-col h-full" href="/services/dentisterie-esthetique">
+            <div class="w-14 h-14 bg-primary-fixed/20 text-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+              <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'wght' 300;">auto_awesome</span>
+            </div>
+            <h3 class="font-headline-md text-xl text-on-surface mb-4">Dentisterie Esthétique</h3>
+            <p class="font-body-md text-on-surface-variant/90 mb-8 flex-grow leading-relaxed">
+              Blanchiment dentaire, facettes et réhabilitation du sourire pour retrouver confiance en vous avec un éclat naturel.
+            </p>
+            <span class="inline-flex items-center text-primary font-bold text-sm group-hover:translate-x-1 transition-transform">
+              En savoir plus <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span>
+            </span>
+          </a>
+
+          <a class="bg-surface border border-outline-variant/50 rounded-2xl p-8 hover:border-primary/50 hover:shadow-xl transition-all group flex flex-col h-full" href="/services/soins-restaurateurs">
+            <div class="w-14 h-14 bg-primary-fixed/20 text-primary rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+              <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'wght' 300;">medical_services</span>
+            </div>
+            <h3 class="font-headline-md text-xl text-on-surface mb-4">Soins Restaurateurs</h3>
+            <p class="font-body-md text-on-surface-variant/90 mb-8 flex-grow leading-relaxed">
+              Soins des caries, couronnes, inlays/onlays et prothèses pour restaurer la fonction et l'apparence de vos dents abîmées.
+            </p>
+            <span class="inline-flex items-center text-primary font-bold text-sm group-hover:translate-x-1 transition-transform">
+              En savoir plus <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span>
+            </span>
+          </a>
+
+          <a class="bg-surface border border-outline-variant/50 rounded-2xl p-8 hover:border-error/50 hover:shadow-xl transition-all group flex flex-col h-full" href="/contact">
+            <div class="w-14 h-14 bg-error-container text-error rounded-2xl flex items-center justify-center mb-8 group-hover:bg-error group-hover:text-on-error transition-colors">
+              <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'wght' 300;">emergency_home</span>
+            </div>
+            <h3 class="font-headline-md text-xl text-on-surface mb-4">Urgences Dentaires</h3>
+            <p class="font-body-md text-on-surface-variant/90 mb-8 flex-grow leading-relaxed">
+              Prise en charge rapide des douleurs aiguës, abcès, traumatismes ou dents cassées pour soulager la douleur immédiatement.
+            </p>
+            <span class="inline-flex items-center text-error font-bold text-sm group-hover:translate-x-1 transition-transform">
+              Nous contacter <span class="material-symbols-outlined text-sm ml-2">arrow_forward</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full py-section-padding bg-surface-container-low" id="a-propos">
+      <div class="w-full px-6 lg:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div class="order-2 lg:order-1 relative rounded-3xl overflow-hidden aspect-video bg-surface-container-high shadow-lg">
+            <img
+              alt="Salle d'attente du cabinet"
+              class="object-cover w-full h-full"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAolcWeaC8IUJ_Ps4dbqkioj-QUUmgB7s7W4zU1C6QqwxAphfEGCSeedbwvu38Cze51VpbLHysgachaFJjZ98sSuJKx0byLEb0qgaVk6fqyRQopXEMBS7Y3THGp6HCQT78LmWZTajD2kCOBdGIzEROEJL7-5hAUwbL2anuUC0klCt2UuMqZHU8Yfc4d6_Nq93qAREzvehOo9we7E7ZkTWYMGBJgzBSEmIjmBHsTrNwDLa1TSDNDn9a2AlmbTGpii450BqoZcbxfAY4"
+            />
+          </div>
+
+          <div class="order-1 lg:order-2">
+            <span class="text-primary font-extrabold uppercase tracking-[0.2em] text-xs mb-4 block">Bienvenue au Cabinet</span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface mb-8 leading-[1.1]">
+              Des soins confortables.<br />Pour un vous confiant.
+            </h2>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed">
+              Notre mission est de fournir des soins dentaires exceptionnels dans un environnement chaleureux et rassurant. Nous traitons chaque patient comme un membre de notre famille, en prenant le temps d'écouter et de personnaliser chaque traitement.
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-8">
+              <div>
+                <p class="font-extrabold text-3xl text-primary mb-1">15+</p>
+                <p class="font-bold text-[11px] text-on-surface-variant uppercase tracking-widest leading-tight">Années d'Expérience</p>
+              </div>
+              <div>
+                <p class="font-extrabold text-3xl text-primary mb-1">1,200+</p>
+                <p class="font-bold text-[11px] text-on-surface-variant uppercase tracking-widest leading-tight">Patients Heureux</p>
+              </div>
+              <div>
+                <p class="font-extrabold text-3xl text-primary mb-1">98%</p>
+                <p class="font-bold text-[11px] text-on-surface-variant uppercase tracking-widest leading-tight">Taux de Satisfaction</p>
+              </div>
+              <div>
+                <p class="font-extrabold text-3xl text-primary mb-1">100%</p>
+                <p class="font-bold text-[11px] text-on-surface-variant uppercase tracking-widest leading-tight">Dédicace Sourire</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</BaseLayout>

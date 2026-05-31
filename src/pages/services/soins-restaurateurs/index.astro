@@ -1,0 +1,289 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Header from "../../../components/Header.astro";
+import Footer from "../../../components/Footer.astro";
+import { AppointmentButton } from "../../../components/AppointmentButton";
+---
+
+<BaseLayout title="Soins Restaurateurs - Dr PINTO KAREN">
+  <Header />
+
+  <main class="w-full">
+    <section class="relative overflow-hidden bg-surface py-section-padding">
+      <div class="w-full px-6 lg:px-12 flex flex-col md:flex-row items-center gap-12">
+        <div class="w-full md:w-1/2 flex flex-col items-start gap-6">
+          <span class="bg-tertiary-fixed text-on-tertiary-fixed px-4 py-1.5 rounded-full font-label-md text-label-md font-bold">
+            EXCELLENCE DENTAIRE
+          </span>
+          <h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary">
+            Soins Restaurateurs
+          </h1>
+          <p class="font-headline-md text-headline-md text-secondary">
+            Retrouvez la fonction et l'esthétique pour un sourire qui dure toute une vie.
+          </p>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+            Nous utilisons les dernières technologies de pointe pour restaurer l'intégrité de votre dentition avec précision, confort et durabilité.
+          </p>
+          <div class="flex flex-wrap gap-4 pt-4">
+            <AppointmentButton client:load label="Consulter un spécialiste" phone="01 23 45 67 89" />
+            <a
+              class="border border-primary text-primary px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:bg-primary-fixed transition-colors"
+              href="/contact"
+            >
+              Nos tarifs
+              <span class="material-symbols-outlined">chevron_right</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="w-full md:w-1/2 relative">
+          <div class="aspect-square rounded-3xl overflow-hidden shadow-2xl bg-surface-container-high">
+            <img
+              alt="Cabinet dentaire moderne"
+              class="w-full h-full object-cover"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7mJbdViqM1RRA0FsQPKa_loziYl_TrgJQFVaIolRWyeR6WRrorKZ4sj6FkCXOQVfiwF8QWAI5mx8zQOUv46NL4dq3Z-TVPnRtU_sXTZLGzgqgHYf0ay5SjXhXRdZhIdUZeRDm74swAxavUM7mmXrkWB4QAvh9UwHB9kCtbrn7-bfo3sp6PVld7jpmSBckm9BnNTX-dcfMJkHqIn9RZHIvGA_RHfwjhs30cmYQTRdh6p8--WVGEhQPFrhtk0f7lBVjAcI5DLPJryo"
+            />
+          </div>
+
+          <div class="absolute -bottom-6 -left-6 bg-surface/85 backdrop-blur-md border border-outline-variant/40 p-6 rounded-2xl shadow-xl flex items-center gap-4 hidden lg:flex">
+            <div class="flex -space-x-2">
+              <img
+                class="w-10 h-10 rounded-full border-2 border-white"
+                alt="Portrait patient"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuArKS5drZTkI2j2W8snwY7fXu1zGqwLbGZV31Jzw-llcbN7gWKj-60LURWPxuFuY2VIdcB-LxGOgzecU_mKjJCbLIoQANwAv8jTBA331pX1HwrY7OvjgysY3CcwWYalXBA5HpsK-FMgpmjkGcICJOsAuT-Vz3cLxPa6ySf2lvTFsbD-8G2gmgBAiUizcoV7Y6JnmvYVNu7YSxVBy4SgKB7hMBImFCHTxGsTgGaC0zSeGCcOSfvaqUtTqk5CR6nPSbQsRd7om7VMoIo"
+              />
+              <img
+                class="w-10 h-10 rounded-full border-2 border-white"
+                alt="Portrait patient"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLowHiKwGrXg28ruFF5akvZf9J-KYs4oMX7PTAyrWwxhdQzqfpEDE25a-3WU3y_PRD2fP-YuiglDGkylNyzdLwyJ7c9eniGsYp8xW8eiM1wrBphbW8mnGES2a6MqeRDmvIy0pOGMrblrDpL1LAoGTJhmet0P-7QjFZdwzDIpfD3g-N4dLsZl6WwKzwwyTlff7SqLpxiQjQaaW7AhKHx3d8fR-In7XPnCqpvMK6XbpeKW1-ppG3MYdiDKOrIaBT3USqMmpxPTaCaqY"
+              />
+            </div>
+            <div>
+              <div class="flex text-amber-500">
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <p class="font-label-md text-label-md text-on-surface font-bold">500+ Patients Satisfaits</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primary text-on-primary py-8">
+      <div class="w-full px-6 lg:px-12 flex flex-wrap justify-between items-center gap-8">
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+          <div>
+            <p class="font-bold">Garantie Durabilité</p>
+            <p class="text-sm opacity-90">Matériaux haute qualité</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">health_and_safety</span>
+          <div>
+            <p class="font-bold">Sans Douleur</p>
+            <p class="text-sm opacity-90">Protocoles de confort avancés</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">precision_manufacturing</span>
+          <div>
+            <p class="font-bold">Technologie CAD/CAM</p>
+            <p class="text-sm opacity-90">Précision micrométrique</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-section-padding bg-surface-container-low">
+      <div class="w-full px-6 lg:px-12">
+        <div class="text-center mb-16 max-w-2xl mx-auto space-y-4">
+          <h2 class="font-headline-lg text-headline-lg text-primary">Nos Solutions de Restauration</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant">
+            Chaque traitement est personnalisé pour s'adapter parfaitement à votre morphologie et à la teinte naturelle de vos dents.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+          <div class="md:col-span-8 bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant hover:border-primary transition-all flex flex-col md:flex-row gap-8 items-center">
+            <div class="w-full md:w-1/2">
+              <div class="w-12 h-12 bg-primary-fixed/30 rounded-xl flex items-center justify-center text-primary mb-6">
+                <span class="material-symbols-outlined text-[28px]">healing</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Traitement des Caries (Composites)</h3>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                Nous utilisons des résines composites de dernière génération qui imitent parfaitement l'émail naturel pour une restauration invisible et solide.
+              </p>
+              <ul class="space-y-2 mb-0">
+                <li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+                  <span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  Esthétique naturelle
+                </li>
+                <li class="flex items-center gap-2 font-body-md text-on-surface-variant">
+                  <span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                  Préservation de la dent saine
+                </li>
+              </ul>
+            </div>
+            <div class="w-full md:w-1/2 min-h-[250px] rounded-2xl overflow-hidden">
+              <img
+                alt="Soin composite"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCer3dkPIec2jCRxBvosLBC51DHAfYs-aw_43uiG6BpHt7pA9TIE-wZCakoTDdb8FDYz9REMgL_4klZMAtEVgOb-iEBRdzB4_wO6pZP8H2ry6RtFAonAZkA8rc4XGHusl7-eu_9_0hlHrkQ7ZTWc_3edE4pwyxYJk3nmOWK7okLSH5CLlmhs54aOvRSObnl44pyyu1CxRyRyhoxOoQCjgnhZ3cWLckq52P2CwpBePs5zQ0VGfF1aQwYWMUgPCLKbP-VnvpSF0UReD4"
+              />
+            </div>
+          </div>
+
+          <div class="md:col-span-4 bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant hover:border-primary transition-all">
+            <div class="w-12 h-12 bg-primary-fixed/30 rounded-xl flex items-center justify-center text-primary mb-6">
+              <span class="material-symbols-outlined text-[28px]">clinical_notes</span>
+            </div>
+            <h3 class="font-headline-md text-headline-md text-on-surface mb-3">Couronnes et Ponts</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+              Restaurez la solidité d'une dent très abîmée ou remplacez une dent manquante par des prothèses fixes en céramique haute performance.
+            </p>
+            <div class="aspect-video rounded-xl overflow-hidden">
+              <img
+                alt="Couronnes dentaires"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6VOPGLhJm4pO0q7yAU8GUTIN8mcIOBO50iJafKCVwGhF1-vaoHKgplg8iCVPc-1V9srZ2EWBjtDFxLHqfFau0RHOF4ud8NM6vnKr91BhFdIGKMfPegEwGOZywlUEMePDSlVFpn_heXj6mFy-tPlrnAwhgXAX1A21lDMcMbqdNIoU_gpEseAM0dxE45UMbJT4iC1kDDIoNyHfmD6ZeKPud6_r3Q3vNqgS6y2DTEHm59I88NYEOBCW3vBXmq1MYEenwGEtfV4EwwQ0"
+              />
+            </div>
+          </div>
+
+          <div class="md:col-span-6 bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant hover:border-primary transition-all">
+            <div class="flex items-center gap-6 mb-6">
+              <div class="w-12 h-12 bg-primary-fixed/30 rounded-xl flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-[28px]">dentistry</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md text-on-surface">Implants Dentaires</h3>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+              La solution ultime pour remplacer une racine manquante. Nos implants en titane offrent une stabilité inégalée et préviennent la fonte osseuse.
+            </p>
+            <div class="bg-surface-container-low p-6 rounded-2xl flex items-center gap-4">
+              <span class="material-symbols-outlined text-primary text-[40px]">security</span>
+              <p class="font-body-md text-on-surface-variant italic">
+                "Une intégration biologique parfaite pour un confort identique à vos dents naturelles."
+              </p>
+            </div>
+          </div>
+
+          <div class="md:col-span-6 bg-surface-container-lowest p-8 rounded-3xl border border-outline-variant hover:border-primary transition-all">
+            <div class="flex items-center gap-6 mb-6">
+              <div class="w-12 h-12 bg-primary-fixed/30 rounded-xl flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-[28px]">grid_view</span>
+              </div>
+              <h3 class="font-headline-md text-headline-md text-on-surface">Inlays / Onlays</h3>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6">
+              Entre le plombage et la couronne, l'Inlay/Onlay est une pièce sur-mesure en céramique qui renforce la structure dentaire tout en étant invisible.
+            </p>
+            <div class="flex gap-4">
+              <div class="flex-1 border border-outline-variant rounded-xl p-4 text-center">
+                <span class="block font-bold text-primary">98%</span>
+                <span class="text-xs text-on-surface-variant uppercase">Conservation</span>
+              </div>
+              <div class="flex-1 border border-outline-variant rounded-xl p-4 text-center">
+                <span class="block font-bold text-primary">15 ans+</span>
+                <span class="text-xs text-on-surface-variant uppercase">Longévité</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-section-padding bg-surface">
+      <div class="w-full px-6 lg:px-12">
+        <div class="flex flex-col md:flex-row items-center gap-16">
+          <div class="w-full md:w-1/2 relative">
+            <div class="grid grid-cols-2 gap-4">
+              <img
+                class="rounded-2xl h-48 w-full object-cover"
+                alt="Restauration invisible"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe8fJSRMCkvDBQF1xnrawjN68IrxdHgM5gKCGNn7C7cuJzG0bDMK8Fw0979MneXwNxuO6OaMGIFkBt5mW2lL4QL09-S47YvMZSVa0RJaTUyfO2NAJU-xD1zs9avoFTy-6pRcWO54eIe3hLuFqKv9uP2vlN_Bnh-KGZ8IP45jETSPansQMJ9Iiwk3fb8vNL3hG7jYc6jo4zdUebL627SjBqof-9z57gQD3w107fPL5Yw6P60-VsUiRf-WSxVy7zldB60wmDQwOJTOA"
+              />
+              <img
+                class="rounded-2xl h-48 w-full object-cover translate-y-8"
+                alt="Scanner dentaire 3D"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmBbYadsQS0PJ6DIhZ9n2btI3Rk-RqiqO4i3so5HV9Gj80Js_t_GsAgzW8IxcJ1bH078z2Fz444LM_5ODmiGTLBWgUxCS6m0S3qfWNK-JRCJetXWScReljzf_tF0ZUW-R82bM_NzGUXd0RtLyztXKfrQroHybSDqpEWCA2b7rHG-NHK5TY2gHl43P44-uetHoOP2ARMTQHPT4hgEoIG9t4NiKvf1zseb1hq3F9qo-uHsDAptlMYhxkdJ2KW6bJNAz0hmoMc2_C5tA"
+              />
+            </div>
+            <div class="absolute -bottom-4 right-4 bg-primary text-on-primary p-8 rounded-2xl max-w-[280px] shadow-2xl">
+              <p class="font-headline-md text-headline-md mb-2">Technologie Digitale</p>
+              <p class="text-sm opacity-90">Empreintes numériques sans pâte pour un confort absolu et une précision chirurgicale.</p>
+            </div>
+          </div>
+
+          <div class="w-full md:w-1/2 space-y-6">
+            <h2 class="font-headline-lg text-headline-lg text-primary">Engagement Confort &amp; Durabilité</h2>
+            <div class="space-y-6">
+              <div class="flex gap-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center">
+                  <span class="material-symbols-outlined text-primary">spa</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-on-surface">Protocole "Zéro Stress"</h3>
+                  <p class="text-on-surface-variant">
+                    Nous prenons le temps nécessaire pour chaque étape, assurant une anesthésie parfaite et un environnement apaisant.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center">
+                  <span class="material-symbols-outlined text-primary">diamond</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-on-surface">Matériaux Bio-compatibles</h3>
+                  <p class="text-on-surface-variant">
+                    Seuls des matériaux certifiés, durables et respectueux de votre santé globale sont utilisés dans notre cabinet.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-4">
+                <div class="flex-shrink-0 w-12 h-12 bg-surface-container-high rounded-full flex items-center justify-center">
+                  <span class="material-symbols-outlined text-primary">update</span>
+                </div>
+                <div>
+                  <h3 class="font-bold text-on-surface">Suivi Post-Opératoire</h3>
+                  <p class="text-on-surface-variant">
+                    Un accompagnement rigoureux après chaque intervention pour garantir la pérennité de vos soins.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-section-padding">
+      <div class="w-full px-6 lg:px-12">
+        <div class="bg-primary-container rounded-[40px] p-12 md:p-20 text-center relative overflow-hidden">
+          <div class="relative z-10">
+            <h2 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-primary-container mb-6">
+              Prêt à retrouver votre sourire ?
+            </h2>
+            <p class="font-body-lg text-body-lg text-on-primary-container/80 max-w-2xl mx-auto mb-10">
+              Prenez rendez-vous dès aujourd'hui pour un bilan complet. Notre équipe vous accompagnera vers une santé bucco-dentaire optimale.
+            </p>
+            <div class="flex justify-center">
+              <AppointmentButton client:load label="Consulter un spécialiste" phone="01 23 45 67 89" />
+            </div>
+          </div>
+          <div class="absolute top-0 right-0 w-64 h-64 bg-primary opacity-10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+          <div class="absolute bottom-0 left-0 w-96 h-96 bg-primary opacity-10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</BaseLayout>

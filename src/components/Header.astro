@@ -1,0 +1,47 @@
+---
+import { AppointmentButton } from "./AppointmentButton";
+
+const pathname = Astro.url.pathname;
+const isActive = (href: string) => {
+  if (href === "/") return pathname === "/";
+  return pathname === href || pathname.startsWith(`${href}/`);
+};
+
+const activeClass =
+  "text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-primary pb-1 font-label-md text-label-md";
+const inactiveClass =
+  "text-on-surface-variant/80 dark:text-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-on-secondary-fixed-variant transition-colors font-label-md text-label-md px-2 py-1 rounded";
+---
+
+<header class="bg-surface/95 dark:bg-surface-container-highest/95 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-outline-variant/50 dark:border-outline shadow-sm">
+  <div class="flex justify-between items-center w-full px-6 lg:px-12 py-4">
+    <div class="flex items-center gap-2">
+      <span class="material-symbols-outlined text-primary text-3xl">dentistry</span>
+      <a
+        class="font-headline-md text-headline-md font-extrabold tracking-tight text-on-surface dark:text-surface-bright"
+        href="/"
+      >
+        Dr PINTO KAREN
+      </a>
+    </div>
+
+    <nav class="hidden md:flex gap-8 items-center">
+      <a class={isActive("/") ? activeClass : inactiveClass} href="/">Accueil</a>
+      <a class={isActive("/services") ? activeClass : inactiveClass} href="/services">Services</a>
+      <a class={isActive("/a-propos") ? activeClass : inactiveClass} href="/a-propos">À Propos</a>
+      <a class={isActive("/contact") ? activeClass : inactiveClass} href="/contact">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-4">
+      <div class="hidden lg:flex items-center gap-2 text-on-surface-variant">
+        <span class="material-symbols-outlined text-lg">call</span>
+        <div class="flex flex-col">
+          <span class="font-label-md text-[10px] text-outline/80 leading-none">Urgence 7/7</span>
+          <span class="font-label-md text-sm font-bold text-on-surface">01 23 45 67 89</span>
+        </div>
+      </div>
+
+      <AppointmentButton client:load label="Prendre RDV" phone="01 23 45 67 89" />
+    </div>
+  </div>
+</header>
