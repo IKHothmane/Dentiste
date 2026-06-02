@@ -45,7 +45,7 @@ import { AppointmentButton } from "../../components/AppointmentButton";
             </div>
             <div>
               <h2 class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider mb-1">Appelez-nous</h2>
-              <p class="text-headline-md font-bold text-on-surface mb-2">01 23 45 67 89</p>
+              <p class="text-headline-md font-bold text-on-surface mb-2">05 22 20 26 12</p>
               <p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">Lun - Sam, 9h00 - 18h00</p>
             </div>
           </div>
@@ -213,7 +213,7 @@ import { AppointmentButton } from "../../components/AppointmentButton";
               </div>
             </div>
 
-            <AppointmentButton client:load label="Confirmer le RDV" phone="01 23 45 67 89" />
+            <AppointmentButton client:load label="Confirmer le RDV" phone="05 22 20 26 12" />
           </div>
         </div>
 
@@ -254,7 +254,7 @@ import { AppointmentButton } from "../../components/AppointmentButton";
                 </div>
                 <div>
                   <p class="font-label-md text-[clamp(10px,0.9vw,11px)] font-bold text-on-surface-variant/70 uppercase tracking-widest">Lieu</p>
-                  <p class="font-body-md text-body-md font-bold text-on-surface leading-tight">123 Rue de la Santé<br />75000 Paris</p>
+                  <p class="font-body-md text-body-md font-bold text-on-surface leading-tight">131 Bd d'Anfa<br />4ème étage, Casablanca</p>
                 </div>
               </div>
             </div>
@@ -271,20 +271,25 @@ import { AppointmentButton } from "../../components/AppointmentButton";
     <section class="w-full px-6 lg:px-12 py-12">
       <h2 class="font-headline-md text-headline-md text-on-surface mb-8 font-bold">Notre Emplacement</h2>
       <div class="rounded-xl overflow-hidden border border-outline-variant shadow-sm h-[clamp(320px,45vw,520px)] relative bg-surface-container-low">
-        <img
-          alt="Carte stylisée montrant l'emplacement du cabinet dentaire."
-          class="w-full h-full object-cover opacity-80"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbv4d7fLGWU0y8FzTCw6ow5PVrCsVlSZGuqpyVN_vphafEnTP9tUk65t6EFW56JJimacosNgDRonbVp_B_638eNQu75JatlfKhUvlekWuLCJv7KHZ2YkHsGdyXGOA1v9gD9RFX2FRkY0UePtjxLQIWZqioYDcGGhR1S0HjDbF2gFl-Uy5QAT5qY00zMdG4zPXcCuY9myPmTxapvSlDqfdwJ3qXfs78u23VsXpuu1NEwUqfQ33j2QeJwvJbdlkJrwtS9pJPpiAGDSs"
-        />
+        <iframe
+          class="w-full h-full"
+          title="Carte OpenStreetMap - 131 Bd d'Anfa, Casablanca"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-7.6384593%2C33.5845287%2C-7.6184593%2C33.6045287&layer=mapnik&marker=33.5945287%2C-7.6284593"
+          style="border: 0;"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
 
         <div class="absolute bottom-6 left-6 bg-surface/95 backdrop-blur-sm p-6 rounded-xl max-w-sm shadow-xl border border-outline-variant/50">
           <h3 class="font-label-md text-body-md font-bold text-on-surface mb-2">Cabinet Dentaire Dr PINTO</h3>
           <p class="font-body-md text-body-md text-on-surface-variant mb-6 leading-relaxed">
-            123 Rue de la Santé<br />75000 Paris, France
+            131 Bd d'Anfa<br />4ème étage<br />Casablanca, Maroc
           </p>
           <a
             class="inline-flex items-center gap-2 text-primary hover:text-primary-container font-label-md text-body-md font-bold transition-colors group"
-            href="#"
+            href="https://www.openstreetmap.org/?mlat=33.5945287&mlon=-7.6284593#map=18/33.5945287/-7.6284593"
+            target="_blank"
+            rel="noreferrer"
           >
             <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">directions</span>
             Obtenir l'itinéraire

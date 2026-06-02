@@ -5,7 +5,7 @@ type Props = {
   phone?: string;
 };
 
-export function AppointmentButton({ label, phone = "01 23 45 67 89" }: Props) {
+export function AppointmentButton({ label, phone = "05 22 20 26 12" }: Props) {
   const [open, setOpen] = useState(false);
   const telHref = useMemo(() => `tel:${phone.replace(/[^0-9+]/g, "")}`, [phone]);
 
